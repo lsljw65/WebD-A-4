@@ -27,4 +27,13 @@ $(function () {
       .end()
       .appendTo(".sliders");
   }, 3000);
+
+  //   팝업
+  $(".notic-list li:first-child").click(function () {
+    $(".modal").show();
+    return false;
+  });
+  $(".modal-close").click(function () {
+    $(".modal").hide();
+  });
 });
